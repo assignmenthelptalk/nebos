@@ -1,0 +1,304 @@
+{
+  "meta": {
+    "siteTitle": "NEBOSH Assignment Help | IGC, NGC & Diploma Support",
+    "siteDescription": "Professional NEBOSH assignment help for IGC, NGC, Diploma, Fire and Environmental qualifications. Open book exam support, model answers, IG2 practical help. Trusted by 4,000+ students.",
+    "siteUrl": "https://nebosh-assignment-help.co.uk",
+    "faviconPath": "/favicon.ico",
+    "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+  },
+  "colors": {
+    "primary": "#7C1D1D",
+    "primaryDark": "#5A1010",
+    "accent": "#FB923C",
+    "accentDark": "#EA7316",
+    "accentLight": "#FFEDD5",
+    "gold": "#F59E0B",
+    "goldDark": "#D97706",
+    "textBase": "#1A1A2E",
+    "textMuted": "#6B7280",
+    "bgWhite": "#FFFFFF",
+    "bgLight": "#F3F4F6",
+    "bgDark": "#7C1D1D",
+    "borderLight": "#E5E7EB",
+    "starColor": "#F59E0B",
+    "white": "#FFFFFF"
+  },
+  "typography": {
+    "fontFamily": "'Inter', sans-serif"
+  },
+  "header": {
+    "logoText": "NEBOSH Help",
+    "logoHref": "/",
+    "navLinks": [
+      { "label": "Services", "href": "#services" },
+      { "label": "About", "href": "#about" },
+      { "label": "How It Works", "href": "#how-it-works" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "ctaButton": {
+      "label": "Get Help Now",
+      "href": "#contact"
+    }
+  },
+  "hero": {
+    "headingLine1": "Expert",
+    "headingHighlight": "NEBOSH Assignment Help",
+    "headingLine3": "From Certified Professionals",
+    "subtext": "Struggling with your NEBOSH IGC, NGC, or open book exam? Our certified health and safety professionals deliver model answers, IG2 practical guidance, and OBE support that examiners reward.",
+    "primaryCta": {
+      "label": "Get Your Assignment Done",
+      "href": "#contact"
+    },
+    "secondaryCta": {
+      "label": "See how it works",
+      "href": "#how-it-works"
+    },
+    "badges": [
+      { "icon": "✓", "text": "100% Plagiarism Free" },
+      { "icon": "✓", "text": "On-Time Delivery" },
+      { "icon": "✓", "text": "Expert NEBOSH Writers" },
+      { "icon": "✓", "text": "Free Revisions" },
+      { "icon": "✓", "text": "Confidential & Secure" }
+    ]
+  },
+  "stats": [
+    { "icon": "🦺", "value": "4,000+", "label": "Assignments Completed" },
+    { "icon": "⭐", "value": "4.9/5", "label": "Average Rating" },
+    { "icon": "📅", "value": "98%", "label": "On-Time Delivery" },
+    { "icon": "🏆", "value": "13+", "label": "Years Experience" }
+  ],
+  "about": {
+    "sectionId": "about",
+    "heading": "Why Students Trust Our NEBOSH Assignment Help",
+    "paragraphs": [
+      "We specialise exclusively in NEBOSH (National Examination Board in Occupational Safety and Health) qualifications, with a dedicated team of writers who have direct experience helping candidates succeed across IGC, NGC, Diploma, and specialist NEBOSH pathways.",
+      "Every writer on our team has completed NEBOSH qualifications themselves. We understand exactly what examiners look for — from command word compliance in OBE tasks to risk assessment structure in IG2 and NG2 practical reports."
+    ],
+    "highlights": [
+      "NEBOSH-qualified writers with direct exam experience",
+      "Unit-by-unit marking criteria alignment",
+      "Harvard referencing and examiner-standard structure",
+      "Turnitin originality report included with every order"
+    ],
+    "imagePlaceholderAlt": "NEBOSH Assignment Help — trusted by 4,000+ candidates"
+  },
+  "qualifications": {
+    "sectionId": "services",
+    "heading": "NEBOSH Qualifications We Cover",
+    "subheading": "Expert support across all NEBOSH pathways — IGC, NGC, Diploma, Fire, Environmental.",
+    "cards": [
+      {
+        "icon": "🏭",
+        "title": "NEBOSH IGC Assignment Help",
+        "description": "Structured guidance for IG1 Open Book Exam tasks and IG2 International Workplace Risk Assessment — examiner-aware support across all IGC units.",
+        "href": "/nebosh-igc-assignment-help"
+      },
+      {
+        "icon": "🏭",
+        "title": "NEBOSH NGC Assignment Help",
+        "description": "Expert help for NG1 OBE answers with UK legislation application and NG2 practical risk assessment reports — distinction-grade guidance.",
+        "href": "/nebosh-ngc-assignment-help"
+      },
+      {
+        "icon": "📖",
+        "title": "NEBOSH Open Book Exam Help",
+        "description": "24-hour OBE support: command word compliance, scenario application, and structured answers that meet NEBOSH marking criteria.",
+        "href": "/nebosh-open-book-exam-obe-help"
+      },
+      {
+        "icon": "🎓",
+        "title": "NEBOSH Diploma Assignment Help",
+        "description": "Advanced support for DN1, DN2, and DN3 Diploma assignments — professional-level guidance for the highest NEBOSH qualification.",
+        "href": "/nebosh-diploma-assignment-help"
+      },
+      {
+        "icon": "💻",
+        "title": "NEBOSH Assignment Help Online",
+        "description": "Remote NEBOSH assignment support for candidates worldwide — fast turnaround, secure delivery, and certified H&S professionals.",
+        "href": "/nebosh-assignment-help-online"
+      }
+    ]
+  },
+  "features": {
+    "heading": "What's Included in Every Order",
+    "cards": [
+      {
+        "icon": "📝",
+        "title": "Custom Written Content",
+        "description": "Every piece is written from scratch to your brief, NEBOSH unit outcomes, and word count."
+      },
+      {
+        "icon": "🔍",
+        "title": "Plagiarism Report",
+        "description": "Turnitin originality report included with every submission."
+      },
+      {
+        "icon": "📚",
+        "title": "Full Harvard Referencing",
+        "description": "Properly formatted reference list and in-text citations per NEBOSH examiner requirements."
+      },
+      {
+        "icon": "✏️",
+        "title": "Unlimited Revisions",
+        "description": "Not satisfied? We revise until the work meets your expectations."
+      },
+      {
+        "icon": "🔒",
+        "title": "Strict Confidentiality",
+        "description": "Your identity and order details are never shared with third parties."
+      },
+      {
+        "icon": "⚡",
+        "title": "Express Delivery",
+        "description": "Need it fast? We offer 24-hour turnaround for urgent OBE and assignment deadlines."
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "heading": "Why Choose Us Over Others",
+    "items": [
+      {
+        "icon": "🎯",
+        "title": "NEBOSH Specialists",
+        "description": "Unlike generic essay mills, we focus solely on NEBOSH qualifications and their specific marking frameworks."
+      },
+      {
+        "icon": "👨‍🏫",
+        "title": "Qualified Writers",
+        "description": "All writers hold NEBOSH qualifications and have direct experience with IGC, NGC, and Diploma assessments."
+      },
+      {
+        "icon": "💬",
+        "title": "Direct Communication",
+        "description": "Message your writer directly via our platform throughout the project."
+      },
+      {
+        "icon": "💰",
+        "title": "Transparent Pricing",
+        "description": "Fixed prices published upfront. No hidden fees, ever."
+      }
+    ]
+  },
+  "testimonials": {
+    "heading": "What Our Students Say",
+    "items": [
+      {
+        "stars": 5,
+        "quote": "Got a Distinction on my IGC IG1 OBE thanks to the perfectly structured scenario-based answers. The writer knew exactly how to apply the command words.",
+        "name": "Ahmed R.",
+        "course": "NEBOSH IGC"
+      },
+      {
+        "stars": 5,
+        "quote": "My NG2 risk assessment report was returned with commendation by my tutor. The hazard identification and management recommendations were spot on.",
+        "name": "Sophie L.",
+        "course": "NEBOSH NGC"
+      },
+      {
+        "stars": 5,
+        "quote": "The Diploma DN1 assignment was incredibly detailed and properly referenced. Required zero revisions and I passed with Credit first time.",
+        "name": "Marcus T.",
+        "course": "NEBOSH Diploma"
+      }
+    ]
+  },
+  "howItWorks": {
+    "sectionId": "how-it-works",
+    "heading": "How It Works",
+    "subheading": "Four simple steps from brief to distinction-grade assignment.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Submit Your Brief",
+        "description": "Share your NEBOSH unit, word count, deadline, and any scenario or guidance documents from your provider."
+      },
+      {
+        "number": "02",
+        "title": "Get Matched",
+        "description": "We assign your order to a specialist NEBOSH writer within 30 minutes."
+      },
+      {
+        "number": "03",
+        "title": "Track Progress",
+        "description": "Monitor your assignment in real-time and message your writer directly."
+      },
+      {
+        "number": "04",
+        "title": "Download & Submit",
+        "description": "Receive your completed, plagiarism-checked assignment before your deadline."
+      }
+    ]
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "Is this service specific to NEBOSH qualifications?",
+        "answer": "Yes. We specialise exclusively in NEBOSH (National Examination Board in Occupational Safety and Health) qualifications. Our writers are selected for their specific knowledge of NEBOSH units, marking criteria, and grade descriptors — not generic academic writing."
+      },
+      {
+        "question": "Will my assignment be plagiarism free?",
+        "answer": "Every assignment is written from scratch and run through Turnitin before delivery. You receive a copy of the originality report alongside your completed work."
+      },
+      {
+        "question": "How quickly can you complete my assignment?",
+        "answer": "Standard turnaround is 5–7 days. For urgent OBE orders we offer 24-hour and 48-hour expedited delivery at an additional cost. Contact us to confirm availability for your deadline."
+      },
+      {
+        "question": "What if I'm not happy with the work?",
+        "answer": "We offer unlimited free revisions within 14 days of delivery. If we cannot meet your requirements after multiple revisions, we offer a full refund — no questions asked."
+      },
+      {
+        "question": "Is my information kept confidential?",
+        "answer": "Absolutely. We never share your personal information or order details with any third party. Payments are processed through secure, encrypted channels and no identifying information is stored unnecessarily."
+      },
+      {
+        "question": "What is the format of the NEBOSH Open Book Exam?",
+        "answer": "The NEBOSH Open Book Exam (OBE) gives candidates a 24-hour window to complete task-based questions. You may use any resources during the exam. Marks depend on command word compliance (identify, describe, explain, evaluate) and the depth of practical application in your answers."
+      },
+      {
+        "question": "How is the NEBOSH IG2 practical assessment marked?",
+        "answer": "The IG2 practical assessment requires a workplace inspection with a written risk assessment report. Marks are awarded for hazard identification quality, risk rating justification, and the quality of management recommendations. Our certified professionals guide you through each section."
+      },
+      {
+        "question": "Which NEBOSH levels and qualifications do you support?",
+        "answer": "We support IGC, NGC, Diploma, Fire, Environmental across all NEBOSH qualification pathways. See our qualifications page for the full list of units and programmes covered."
+      }
+    ]
+  },
+  "mission": {
+    "heading": "Our Mission",
+    "text": "To help health and safety professionals achieve the NEBOSH qualifications they need to advance their careers — providing expert, examiner-aware assignment guidance across every NEBOSH pathway."
+  },
+  "finalCta": {
+    "heading": "Ready to Pass Your NEBOSH Assignment?",
+    "subtext": "Join 4,000+ NEBOSH candidates who've submitted distinction-grade work with our certified H&S expert support. Start today.",
+    "button": {
+      "label": "Start Your Order Today",
+      "href": "#contact"
+    }
+  },
+  "footer": {
+    "logoText": "NEBOSH Help",
+    "description": "The UK's specialist in NEBOSH assignment support. Trusted by 4,000+ candidates across IGC, NGC, and Diploma qualifications.",
+    "columns": [
+      {
+        "heading": "Quick Links",
+        "links": [
+          { "label": "Services", "href": "#services" },
+          { "label": "About Us", "href": "#about" },
+          { "label": "How It Works", "href": "#how-it-works" },
+          { "label": "FAQ", "href": "#faq" }
+        ]
+      },
+      {
+        "heading": "Contact",
+        "links": [
+          { "label": "support@nebosh-assignment-help.co.uk", "href": "mailto:support@nebosh-assignment-help.co.uk" },
+          { "label": "WhatsApp Us", "href": "https://wa.me/447916696894" }
+        ]
+      }
+    ],
+    "copyright": "© 2025 NEBOSH Assignment Help. All rights reserved."
+  }
+}

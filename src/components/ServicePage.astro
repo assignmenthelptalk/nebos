@@ -1,0 +1,573 @@
+---
+/**
+ * ServicePage.astro
+ * Renders an inner service/qualification page from a content.json page entry.
+ * Used by src/pages/[...slug].astro
+ */
+
+interface H2Section {
+  heading: string;
+  body: string;
+}
+
+interface RelatedPage {
+  title: string;
+  slug: string;
+}
+
+interface HeaderImage {
+  src: string;
+  alt: string;
+  title: string;
+  width: number;
+  height: number;
+}
+
+interface PageData {
+  slug: string;
+  tier: number;
+  title: string;
+  metaTitle: string;
+  metaDescription: string;
+  h1: string;
+  intro: string;
+  h2Sections: H2Section[];
+  relatedPages: RelatedPage[];
+  contextualQuestion: string;
+  headerImage?: HeaderImage;
+}
+
+interface SiteConfig {
+  header: {
+    logoText: string;
+    logoHref: string;
+    navLinks: { label: string; href: string }[];
+    ctaButton: { label: string; href: string };
+  };
+  finalCta: {
+    heading: string;
+    subtext: string;
+    button: { label: string; href: string };
+  };
+  footer: {
+    logoText: string;
+    description: string;
+    columns: { heading: string; links: { label: string; href: string }[] }[];
+    copyright: string;
+  };
+  faq?: {
+    heading: string;
+    items: { question: string; answer: string }[];
+  };
+}
+
+interface Props {
+  page: PageData;
+  config: SiteConfig;
+  rawHtml?: string;
+}
+
+const { page, config, rawHtml = '' } = Astro.props;
+const { header, finalCta, footer, faq } = config;
+
+// Show first 4 FAQ items on inner pages
+const faqItems = faq?.items?.slice(0, 4) ?? [];
+---
+
+<!-- Header -->
+<header class="header">
+  <div class="container header__inner">
+    <a href="/" class="header__logo">{header.logoText}</a>
+    <nav class="header__nav" aria-label="Main navigation">
+      <ul class="header__nav-list">
+        {header.navLinks.map((link) => (
+          <li><a href={link.href} class="header__nav-link">{link.label}</a></li>
+        ))}
+        <li><a href="/" class="header__nav-link">Home</a></li>
+      </ul>
+    </nav>
+    <a href={header.ctaButton.href} class="header__cta">{header.ctaButton.label}</a>
+  </div>
+</header>
+
+<!-- Breadcrumb + page hero -->
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol class="breadcrumb__list">
+        <li><a href="/">Home</a></li>
+        <li aria-current="page">{page.title}</li>
+      </ol>
+    </nav>
+    <div class="page-hero__content">
+      <span class="page-hero__badge">
+        {page.tier === 1 ? 'Core Service' : 'Expert Guide'}
+      </span>
+      <h1 class="page-hero__h1">{page.h1}</h1>
+      {page.headerImage && (
+        <div class="page-hero__header-image">
+          <img
+            src={page.headerImage.src}
+            alt={page.headerImage.alt}
+            title={page.headerImage.title}
+            width={page.headerImage.width}
+            height={page.headerImage.height}
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </div>
+      )}
+      <p class="page-hero__intro">{page.intro}</p>
+      <a href={header.ctaButton.href} class="page-hero__cta">{header.ctaButton.label} →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Main content -->
+<main class="page-content">
+  <div class="container page-content__grid">
+
+    <!-- Article -->
+    <article class="page-article">
+      {rawHtml ? (
+        <Fragment set:html={rawHtml} />
+      ) : (
+        <>
+          {page.h2Sections.map((section) => (
+            <section class="page-article__section">
+              <h2 class="page-article__h2">{section.heading}</h2>
+              {section.body
+                ? <p class="page-article__body">{section.body}</p>
+                : (
+                  <p class="page-article__body page-article__body--placeholder">
+                    Our specialists provide expert, examiner-aware guidance on {section.heading.toLowerCase()}.
+                    Contact us to discuss your specific requirements and get tailored support.
+                  </p>
+                )
+              }
+            </section>
+          ))}
+          {page.h2Sections.length > 2 && (
+            <div class="inline-cta">
+              <p class="inline-cta__text">Need expert help with this topic?</p>
+              <a href={header.ctaButton.href} class="inline-cta__btn">{header.ctaButton.label}</a>
+            </div>
+          )}
+        </>
+      )}
+    </article>
+
+    <!-- Sidebar -->
+    <aside class="page-sidebar">
+      <!-- Order box -->
+      <div class="sidebar-card sidebar-card--cta">
+        <h3 class="sidebar-card__heading">Get Expert Help</h3>
+        <p class="sidebar-card__text">
+          Specialist {header.logoText} writers, on-time delivery, plagiarism-free guarantee.
+        </p>
+        <a href={header.ctaButton.href} class="sidebar-card__btn">
+          {header.ctaButton.label}
+        </a>
+        <ul class="sidebar-card__trust">
+          <li>✓ Plagiarism-free</li>
+          <li>✓ On-time delivery</li>
+          <li>✓ Free revisions</li>
+          <li>✓ Expert writers</li>
+        </ul>
+      </div>
+
+      <!-- Related pages -->
+      {page.relatedPages.length > 0 && (
+        <div class="sidebar-card">
+          <h3 class="sidebar-card__heading">Related Topics</h3>
+          <ul class="sidebar-card__links">
+            {page.relatedPages.map((rp) => (
+              <li>
+                <a href={`/${rp.slug}`} class="sidebar-card__link">
+                  {rp.title} →
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </aside>
+  </div>
+
+  <!-- FAQ strip -->
+  {faqItems.length > 0 && (
+    <section class="page-faq">
+      <div class="container">
+        <h2 class="section-heading">Common Questions</h2>
+        <div class="page-faq__list">
+          {faqItems.map((item) => (
+            <details class="faq__item">
+              <summary class="faq__question">
+                <span class="faq__question-text">{item.question}</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq__answer">
+                <div class="faq__answer-inner">
+                  <p>{item.answer}</p>
+                </div>
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+</main>
+
+<!-- Final CTA -->
+<section class="final-cta" id="contact">
+  <div class="container">
+    <div class="final-cta__inner">
+      <h2 class="final-cta__heading">{finalCta.heading}</h2>
+      <p class="final-cta__subtext">{finalCta.subtext}</p>
+      <a href={finalCta.button.href} class="final-cta__btn">{finalCta.button.label}</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer__main">
+    <div class="footer__brand">
+      <a href="/" class="footer__logo">{footer.logoText}</a>
+      <p class="footer__desc">{footer.description}</p>
+    </div>
+    {footer.columns.map((col) => (
+      <div class="footer__col">
+        <h3 class="footer__col-heading">{col.heading}</h3>
+        <ul class="footer__links">
+          {col.links.map((link) => (
+            <li><a href={link.href} class="footer__link">{link.label}</a></li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+  <div class="footer__bar">
+    <div class="container footer__bar-inner">{footer.copyright}</div>
+  </div>
+</footer>
+
+<style>
+  /* ── Header ─────────────────────────────────────────────────── */
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--color-primary);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  .header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    height: 4rem;
+  }
+  .header__logo {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--color-white);
+    white-space: nowrap;
+  }
+  .header__nav { flex: 1; }
+  .header__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .header__nav-link {
+    color: rgba(255,255,255,0.85);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+    transition: color 0.15s, background-color 0.15s;
+  }
+  .header__nav-link:hover {
+    color: var(--color-white);
+    background-color: rgba(255,255,255,0.1);
+  }
+  .header__cta {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1.25rem;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    border-radius: 0.375rem;
+    white-space: nowrap;
+    transition: background-color 0.15s;
+    flex-shrink: 0;
+  }
+  .header__cta:hover { background-color: var(--color-accent-dark); }
+
+  @media (max-width: 768px) {
+    .header__nav { display: none; }
+  }
+
+  /* ── Page Hero ──────────────────────────────────────────────── */
+  .page-hero {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-bg-dark) 100%);
+    padding: 3.5rem 0 3rem;
+    color: var(--color-white);
+  }
+  .breadcrumb { margin-bottom: 1.5rem; }
+  .breadcrumb__list {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: rgba(255,255,255,0.65);
+  }
+  .breadcrumb__list li + li::before { content: '/'; margin-right: 0.5rem; }
+  .breadcrumb__list a { color: rgba(255,255,255,0.75); }
+  .breadcrumb__list a:hover { color: var(--color-white); }
+
+  .page-hero__content { max-width: 760px; }
+  .page-hero__badge {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0.25rem 0.75rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+  }
+  .page-hero__h1 {
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--color-white);
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.02em;
+  }
+  .page-hero__header-image {
+    margin: 1.5rem 0;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    max-width: 760px;
+  }
+  .page-hero__header-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .page-hero__intro {
+    font-size: 1.0625rem;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.7;
+    max-width: 600px;
+    margin-bottom: 1.75rem;
+  }
+  .page-hero__cta {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.875rem 2rem;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    font-weight: 700;
+    border-radius: 0.375rem;
+    transition: background-color 0.2s;
+  }
+  .page-hero__cta:hover { background-color: var(--color-accent-dark); }
+
+  /* ── Main content grid ──────────────────────────────────────── */
+  .page-content { padding: 4rem 0 2rem; }
+  .page-content__grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  /* ── Article fallback styles ────────────────────────────────── */
+  .page-article__section { margin-bottom: 2.5rem; }
+  .page-article__h2 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 0.875rem;
+    line-height: 1.3;
+    padding-bottom: 0.625rem;
+    border-bottom: 2px solid var(--color-border-light);
+  }
+  .page-article__body {
+    color: var(--color-text-muted);
+    line-height: 1.8;
+    font-size: 1rem;
+  }
+  .page-article__body--placeholder { font-style: italic; opacity: 0.85; }
+
+  .inline-cta {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: var(--color-accent-light);
+    border: 1px solid var(--color-accent);
+    border-radius: 0.75rem;
+    padding: 1.25rem 1.5rem;
+    margin: 2.5rem 0;
+    flex-wrap: wrap;
+  }
+  .inline-cta__text { font-weight: 600; color: var(--color-primary); flex: 1; }
+  .inline-cta__btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.625rem 1.5rem;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    font-weight: 600;
+    border-radius: 0.375rem;
+    white-space: nowrap;
+    transition: background-color 0.2s;
+  }
+  .inline-cta__btn:hover { background-color: var(--color-accent-dark); }
+
+  /* ── Sidebar ────────────────────────────────────────────────── */
+  .page-sidebar { position: sticky; top: 5rem; display: flex; flex-direction: column; gap: 1.25rem; }
+  .sidebar-card {
+    background-color: var(--color-bg-white);
+    border: 1px solid var(--color-border-light);
+    border-radius: 0.875rem;
+    padding: 1.5rem;
+  }
+  .sidebar-card--cta {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-white);
+  }
+  .sidebar-card__heading { font-size: 1.0625rem; font-weight: 700; margin-bottom: 0.75rem; color: inherit; }
+  .sidebar-card--cta .sidebar-card__heading { color: var(--color-white); }
+  .sidebar-card__text { font-size: 0.9375rem; color: rgba(255,255,255,0.8); line-height: 1.6; margin-bottom: 1.25rem; }
+  .sidebar-card__btn {
+    display: block;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    font-weight: 700;
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+    transition: background-color 0.2s;
+  }
+  .sidebar-card__btn:hover { background-color: var(--color-accent-dark); }
+  .sidebar-card__trust { display: flex; flex-direction: column; gap: 0.375rem; font-size: 0.875rem; color: rgba(255,255,255,0.75); }
+  .sidebar-card__links { display: flex; flex-direction: column; gap: 0.5rem; }
+  .sidebar-card__link { font-size: 0.9375rem; color: var(--color-primary); transition: color 0.15s; line-height: 1.4; }
+  .sidebar-card__link:hover { color: var(--color-accent-dark); }
+
+  /* ── Page FAQ ───────────────────────────────────────────────── */
+  .page-faq { background-color: var(--color-bg-light); padding: 4rem 0; margin-top: 2rem; }
+  .page-faq__list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.75rem; }
+  .faq__item { border: 1px solid var(--color-border-light); border-radius: 0.625rem; overflow: hidden; background-color: var(--color-bg-white); }
+  .faq__item[open] { border-color: var(--color-accent); }
+  .faq__question { display: flex; justify-content: space-between; align-items: center; padding: 1.125rem 1.5rem; cursor: pointer; gap: 1rem; list-style: none; user-select: none; }
+  .faq__question::-webkit-details-marker { display: none; }
+  .faq__question-text { font-weight: 600; font-size: 1rem; color: var(--color-primary); flex: 1; line-height: 1.4; }
+  .faq__icon { flex-shrink: 0; width: 1.5rem; height: 1.5rem; border-radius: 50%; background-color: var(--color-accent-light); position: relative; transition: background-color 0.2s; }
+  .faq__icon::before, .faq__icon::after { content: ''; position: absolute; background-color: var(--color-accent-dark); border-radius: 2px; top: 50%; left: 50%; transition: transform 0.25s ease, opacity 0.25s ease; }
+  .faq__icon::before { width: 10px; height: 2px; transform: translate(-50%, -50%); }
+  .faq__icon::after  { width: 2px; height: 10px; transform: translate(-50%, -50%); }
+  .faq__item[open] .faq__icon { background-color: var(--color-accent); }
+  .faq__item[open] .faq__icon::before,
+  .faq__item[open] .faq__icon::after { background-color: var(--color-white); }
+  .faq__item[open] .faq__icon::after { opacity: 0; transform: translate(-50%, -50%) rotate(90deg); }
+  .faq__answer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.25s ease; }
+  .faq__item[open] .faq__answer { grid-template-rows: 1fr; }
+  .faq__answer-inner { overflow: hidden; }
+  .faq__answer-inner p { padding: 0 1.5rem 1.125rem; color: var(--color-text-muted); font-size: 0.9375rem; line-height: 1.75; }
+
+  /* ── Final CTA ───────────────────────────────────────────────── */
+  .final-cta { background-color: var(--color-accent); padding: 4rem 0; }
+  .final-cta__inner { max-width: 680px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 1.25rem; }
+  .final-cta__heading { font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 800; color: var(--color-white); line-height: 1.2; }
+  .final-cta__subtext { font-size: 1.125rem; color: rgba(255,255,255,0.88); line-height: 1.7; }
+  .final-cta__btn { display: inline-flex; align-items: center; margin-top: 0.5rem; padding: 1rem 2.5rem; background-color: var(--color-white); color: var(--color-accent-dark); font-weight: 700; font-size: 1.0625rem; border-radius: 0.375rem; transition: background-color 0.2s, color 0.2s; }
+  .final-cta__btn:hover { background-color: var(--color-primary); color: var(--color-white); }
+
+  /* ── Footer ──────────────────────────────────────────────────── */
+  .footer { background-color: var(--color-bg-dark); color: var(--color-white); }
+  .footer__main { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem; padding-top: 3.5rem; padding-bottom: 3rem; }
+  .footer__logo { display: block; font-size: 1.375rem; font-weight: 800; color: var(--color-white); margin-bottom: 0.875rem; }
+  .footer__desc { font-size: 0.9375rem; color: rgba(255,255,255,0.65); line-height: 1.7; max-width: 320px; }
+  .footer__col-heading { font-size: 0.875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: rgba(255,255,255,0.55); margin-bottom: 1rem; }
+  .footer__links { display: flex; flex-direction: column; gap: 0.625rem; }
+  .footer__link { font-size: 0.9375rem; color: rgba(255,255,255,0.75); transition: color 0.15s; }
+  .footer__link:hover { color: var(--color-accent); }
+  .footer__bar { border-top: 1px solid rgba(255,255,255,0.1); }
+  .footer__bar-inner { padding: 1.25rem 0; font-size: 0.875rem; color: rgba(255,255,255,0.45); }
+
+  /* ── Responsive ──────────────────────────────────────────────── */
+  @media (max-width: 900px) {
+    .page-content__grid { grid-template-columns: 1fr; }
+    .page-sidebar { position: static; }
+    .footer__main { grid-template-columns: 1fr 1fr; }
+    .footer__brand { grid-column: 1 / -1; }
+  }
+  @media (max-width: 540px) {
+    .page-hero { padding: 2.5rem 0 2rem; }
+    .footer__main { grid-template-columns: 1fr; }
+    .footer__brand { grid-column: auto; }
+  }
+
+  /* ── Global styles for set:html article content ──────────────── */
+  :global(.page-article h2) {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 2rem 0 0.875rem;
+    line-height: 1.3;
+    padding-bottom: 0.625rem;
+    border-bottom: 2px solid var(--color-border-light);
+  }
+  :global(.page-article h3) {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 1.5rem 0 0.625rem;
+    line-height: 1.35;
+  }
+  :global(.page-article p) {
+    color: var(--color-text-muted);
+    line-height: 1.8;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  :global(.page-article ul),
+  :global(.page-article ol) {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-text-muted);
+    line-height: 1.8;
+  }
+  :global(.page-article ul) { list-style: disc; }
+  :global(.page-article ol) { list-style: decimal; }
+  :global(.page-article li) { margin-bottom: 0.375rem; }
+  :global(.page-article strong) { font-weight: 700; color: var(--color-primary); }
+  :global(.page-article a) { color: var(--color-accent-dark); text-decoration: underline; }
+  :global(.page-article table) { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; font-size: 0.9375rem; }
+  :global(.page-article th),
+  :global(.page-article td) { border: 1px solid var(--color-border-light); padding: 0.625rem 0.875rem; text-align: left; }
+  :global(.page-article th) { background-color: var(--color-bg-light); font-weight: 700; color: var(--color-primary); }
+  :global(.page-infographic) {
+    margin: 2rem 0;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  :global(.page-infographic img) { width: 100%; height: auto; display: block; }
+  :global(.page-infographic figcaption) { font-size: 0.875rem; color: var(--color-text-muted); text-align: center; padding: 0.5rem 0; }
+</style>
