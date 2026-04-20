@@ -524,7 +524,14 @@
           "slug": "nebosh-igc-assignment-help"
         }
       ],
-      "contextualQuestion": "How does UK fire safety legislation shape the content requirements of the NEBOSH Fire Certificate assignment?"
+      "contextualQuestion": "How does UK fire safety legislation shape the content requirements of the NEBOSH Fire Certificate assignment?",
+      "headerImage": {
+        "src": "/header_nebosh-fire-certificate-assignment-help.webp",
+        "alt": "NEBOSH Fire Certificate Assignment Help — FC1 and FC2 Expert Guidance",
+        "title": "NEBOSH Fire Certificate Assignment Help — FC1 and FC2 Expert Guidance",
+        "width": 1200,
+        "height": 420
+      }
     },
     {
       "slug": "nebosh-environmental-certificate-assignment-help",
@@ -562,7 +569,14 @@
           "slug": "nebosh-diploma-assignment-help"
         }
       ],
-      "contextualQuestion": "How does ISO 14001 connect to the environmental management themes assessed in NEBOSH EC assignments?"
+      "contextualQuestion": "How does ISO 14001 connect to the environmental management themes assessed in NEBOSH EC assignments?",
+      "headerImage": {
+        "src": "/header_nebosh-environmental-certificate-assignment-help.webp",
+        "alt": "NEBOSH Environmental Certificate Assignment Help — EC1 and Practical Guidance",
+        "title": "NEBOSH Environmental Certificate Assignment Help — EC1 and Practical Guidance",
+        "width": 1200,
+        "height": 420
+      }
     },
     {
       "slug": "nebosh-construction-certificate-assignment-help",
@@ -600,7 +614,132 @@
           "slug": "nebosh-assignment-marking-criteria-explained"
         }
       ],
-      "contextualQuestion": "How do construction-specific regulations like CDM 2015 shape the required content depth of NEBOSH NC assignments?"
+      "contextualQuestion": "How do construction-specific regulations like CDM 2015 shape the required content depth of NEBOSH NC assignments?",
+      "headerImage": {
+        "src": "/header_nebosh-construction-certificate-assignment-help.webp",
+        "alt": "NEBOSH Construction Certificate Assignment Help — NC1 and NC2 Expert Support",
+        "title": "NEBOSH Construction Certificate Assignment Help — NC1 and NC2 Expert Support",
+        "width": 1200,
+        "height": 420
+      }
+    },
+    {
+      "slug": "nebosh-obe-sample-questions-worked-answers",
+      "tier": 2,
+      "title": "NEBOSH OBE Sample Questions With Worked Answers",
+      "metaTitle": "NEBOSH OBE Sample Questions With Worked Answers: Pass and Distinction Examples | NEBOSH Assignment Help",
+      "metaDescription": "Annotated NEBOSH OBE worked answers for Explain, Suggest, and Describe command words — with pass-grade and distinction-grade versions compared side by side.",
+      "h1": "NEBOSH OBE Sample Questions With Worked Answers: Distinction-Grade Examples Annotated",
+      "intro": "Annotated worked answers for three NEBOSH OBE command word types — Explain, Suggest, and Describe — showing exactly how pass-grade and distinction-grade responses differ in structure, depth, and scenario application.",
+      "h2Sections": [
+        {
+          "heading": "What NEBOSH OBE Questions Look Like: Scenario Format and Task Structure",
+          "body": ""
+        },
+        {
+          "heading": "Worked Example 1: How to Answer an \"Explain\" Task at Distinction Level",
+          "body": ""
+        },
+        {
+          "heading": "Worked Example 2: How to Answer a \"Suggest\" Task at Distinction Level",
+          "body": ""
+        },
+        {
+          "heading": "Worked Example 3: How to Answer a \"Describe\" Task at Distinction Level",
+          "body": ""
+        },
+        {
+          "heading": "How to Integrate Scenario Information Into Every OBE Answer",
+          "body": ""
+        },
+        {
+          "heading": "How Legislation and Standards Should Appear in Distinction-Grade OBE Answers",
+          "body": ""
+        },
+        {
+          "heading": "How to Get Help With Your NEBOSH OBE",
+          "body": ""
+        }
+      ],
+      "relatedPages": [
+        {
+          "title": "NEBOSH Open Book Exam Help",
+          "slug": "nebosh-open-book-exam-obe-help"
+        },
+        {
+          "title": "NEBOSH Assignment Marking Criteria Explained",
+          "slug": "nebosh-assignment-marking-criteria-explained"
+        },
+        {
+          "title": "NEBOSH Examiner Reports Analysis",
+          "slug": "nebosh-examiner-reports-analysis"
+        }
+      ],
+      "contextualQuestion": "How do NEBOSH examiners differentiate between a pass-grade and distinction-grade answer at the point of marking?",
+      "headerImage": {
+        "src": "/header_nebosh-obe-sample-questions-worked-answers.webp",
+        "alt": "NEBOSH OBE Sample Questions With Worked Answers — Pass and Distinction Compared",
+        "title": "NEBOSH OBE Sample Questions With Worked Answers — Pass and Distinction Compared",
+        "width": 1200,
+        "height": 420
+      }
+    },
+    {
+      "slug": "nebosh-examiner-reports-analysis",
+      "tier": 2,
+      "title": "NEBOSH Examiner Reports Analysis",
+      "metaTitle": "NEBOSH Examiner Reports Analysis: What Failure Patterns Reveal | NEBOSH Assignment Help",
+      "metaDescription": "Analysis of NEBOSH examiner reports — five recurring failure patterns, distinction characteristics, and how to use report intelligence to guide your OBE preparation.",
+      "h1": "NEBOSH Examiner Reports Analysis: What the Feedback Reveals and How to Use It",
+      "intro": "Systematic analysis of NEBOSH examiner report feedback — five recurring failure patterns across IGC, NGC, and specialist certificates, with distinction characteristics and unit-specific differences.",
+      "h2Sections": [
+        {
+          "heading": "What Are NEBOSH Examiner Reports and Where Are They Published?",
+          "body": ""
+        },
+        {
+          "heading": "What NEBOSH Examiner Reports Consistently Reveal: Five Recurring Failure Patterns",
+          "body": ""
+        },
+        {
+          "heading": "What Examiner Reports Say About Distinction-Grade Performance",
+          "body": ""
+        },
+        {
+          "heading": "How to Use Examiner Reports as Preparation Intelligence",
+          "body": ""
+        },
+        {
+          "heading": "How Examiner Report Intelligence Differs by Qualification Unit",
+          "body": ""
+        },
+        {
+          "heading": "How Our NEBOSH Assignment Help Service Uses Examiner Report Intelligence",
+          "body": ""
+        }
+      ],
+      "relatedPages": [
+        {
+          "title": "NEBOSH Assignment Marking Criteria Explained",
+          "slug": "nebosh-assignment-marking-criteria-explained"
+        },
+        {
+          "title": "NEBOSH OBE Sample Questions With Worked Answers",
+          "slug": "nebosh-obe-sample-questions-worked-answers"
+        },
+        {
+          "title": "How to Pass NEBOSH Assignment First Time",
+          "slug": "how-to-pass-nebosh-assignment-first-time"
+        }
+      ],
+      "contextualQuestion": "What patterns in NEBOSH examiner feedback most consistently predict whether a candidate achieves distinction or referral?",
+      "headerImage": {
+        "src": "/header_nebosh-examiner-reports-analysis.webp",
+        "alt": "NEBOSH Examiner Reports Analysis — Failure Patterns and Distinction Characteristics",
+        "title": "NEBOSH Examiner Reports Analysis — Failure Patterns and Distinction Characteristics",
+        "width": 1200,
+        "height": 420
+      }
     },
     {
       "slug": "how-to-pass-nebosh-assignment-first-time",
