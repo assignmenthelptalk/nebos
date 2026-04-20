@@ -74,6 +74,22 @@ const { header, finalCta, footer, faq } = config;
 const faqItems = faq?.items?.slice(0, 4) ?? [];
 ---
 
+<!-- WhatsApp top bar -->
+<div class="sp-topbar">
+  <div class="container sp-topbar__inner">
+    <span class="sp-topbar__left">
+      <svg class="sp-topbar__wa-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.558 4.112 1.528 5.837L0 24l6.335-1.508A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.369l-.36-.214-3.733.888.936-3.618-.235-.372A9.818 9.818 0 1112 21.818z"/>
+      </svg>
+      WhatsApp us: <a href="https://wa.me/447916696894" class="sp-topbar__wa-link">+44 7916 696894</a>
+    </span>
+    <a href="https://wa.me/447916696894" class="sp-topbar__right" target="_blank" rel="noopener noreferrer">
+      Chat Now &rarr;
+    </a>
+  </div>
+</div>
+
 <!-- Header -->
 <header class="header">
   <div class="container header__inner">
@@ -86,9 +102,81 @@ const faqItems = faq?.items?.slice(0, 4) ?? [];
         <li><a href="/" class="header__nav-link">Home</a></li>
       </ul>
     </nav>
-    <a href={header.ctaButton.href} class="header__cta">{header.ctaButton.label}</a>
+    <div class="header__actions">
+      <a href="https://wa.me/447916696894" class="header__wa-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp us">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.558 4.112 1.528 5.837L0 24l6.335-1.508A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.369l-.36-.214-3.733.888.936-3.618-.235-.372A9.818 9.818 0 1112 21.818z"/>
+        </svg>
+        WhatsApp
+      </a>
+      <a href={header.ctaButton.href} class="header__cta">{header.ctaButton.label}</a>
+    </div>
+
+    <!-- Hamburger -->
+    <button class="header__hamburger" id="sp-menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="sp-mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
+
+<!-- Mobile drawer -->
+<div class="mobile-menu" id="sp-mobile-menu" aria-hidden="true">
+  <div class="mobile-menu__overlay" id="sp-menu-overlay"></div>
+  <div class="mobile-menu__panel">
+    <div class="mobile-menu__top">
+      <span class="mobile-menu__logo">{header.logoText}</span>
+      <button class="mobile-menu__close" id="sp-menu-close" aria-label="Close menu">&times;</button>
+    </div>
+    <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+      <ul>
+        {header.navLinks.map((link) => (
+          <li><a href={link.href} class="mobile-menu__link">{link.label}</a></li>
+        ))}
+        <li><a href="/" class="mobile-menu__link">Home</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu__ctas">
+      <a href="https://wa.me/447916696894" class="mobile-menu__wa" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.558 4.112 1.528 5.837L0 24l6.335-1.508A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.369l-.36-.214-3.733.888.936-3.618-.235-.372A9.818 9.818 0 1112 21.818z"/>
+        </svg>
+        WhatsApp: +44 7916 696894
+      </a>
+      <a href={header.ctaButton.href} class="mobile-menu__cta">{header.ctaButton.label}</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  const spToggle  = document.getElementById('sp-menu-toggle')!;
+  const spClose   = document.getElementById('sp-menu-close')!;
+  const spOverlay = document.getElementById('sp-menu-overlay')!;
+  const spMenu    = document.getElementById('sp-mobile-menu')!;
+
+  function spOpen() {
+    spMenu.setAttribute('aria-hidden', 'false');
+    spMenu.classList.add('is-open');
+    spToggle.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function spCloseMenu() {
+    spMenu.setAttribute('aria-hidden', 'true');
+    spMenu.classList.remove('is-open');
+    spToggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  spToggle.addEventListener('click', spOpen);
+  spClose.addEventListener('click', spCloseMenu);
+  spOverlay.addEventListener('click', spCloseMenu);
+
+  spMenu.querySelectorAll('.mobile-menu__link, .mobile-menu__wa, .mobile-menu__cta').forEach(el => {
+    el.addEventListener('click', spCloseMenu);
+  });
+</script>
 
 <!-- Breadcrumb + page hero -->
 <section class="page-hero">
@@ -220,6 +308,15 @@ const faqItems = faq?.items?.slice(0, 4) ?? [];
   )}
 </main>
 
+<!-- Floating WhatsApp button -->
+<a href="https://wa.me/447916696894" class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.558 4.112 1.528 5.837L0 24l6.335-1.508A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.369l-.36-.214-3.733.888.936-3.618-.235-.372A9.818 9.818 0 1112 21.818z"/>
+  </svg>
+  <span class="wa-float__label">Chat on WhatsApp</span>
+</a>
+
 <!-- Final CTA -->
 <section class="final-cta" id="contact">
   <div class="container">
@@ -255,6 +352,26 @@ const faqItems = faq?.items?.slice(0, 4) ?? [];
 </footer>
 
 <style>
+  /* ── Top bar ────────────────────────────────────────────────── */
+  .sp-topbar {
+    background-color: #3d0606;
+    border-bottom: 1px solid rgba(251, 146, 60, 0.3);
+    padding: 0.45rem 0;
+  }
+  .sp-topbar__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 0.8125rem;
+    color: rgba(255,255,255,0.75);
+  }
+  .sp-topbar__left { display: flex; align-items: center; gap: 0.4rem; }
+  .sp-topbar__wa-icon { width: 14px; height: 14px; color: #25D366; flex-shrink: 0; }
+  .sp-topbar__wa-link { color: #25D366; font-weight: 600; }
+  .sp-topbar__right   { color: #25D366; font-weight: 600; white-space: nowrap; }
+  .sp-topbar__right:hover, .sp-topbar__wa-link:hover { text-decoration: underline; }
+
   /* ── Header ─────────────────────────────────────────────────── */
   .header {
     position: sticky;
@@ -296,14 +413,31 @@ const faqItems = faq?.items?.slice(0, 4) ?? [];
     color: var(--color-white);
     background-color: rgba(255,255,255,0.1);
   }
+  .header__actions { display: flex; align-items: center; gap: 0.625rem; flex-shrink: 0; }
+
+  .header__wa-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.5rem 1rem;
+    background-color: #25D366;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    border-radius: 0.375rem;
+    white-space: nowrap;
+    transition: background-color 0.15s;
+  }
+  .header__wa-btn:hover { background-color: #1da851; }
+
   .header__cta {
     display: inline-flex;
     align-items: center;
-    padding: 0.5rem 1.25rem;
+    padding: 0.5rem 1.125rem;
     background-color: var(--color-accent);
     color: var(--color-white);
     font-weight: 600;
-    font-size: 0.9375rem;
+    font-size: 0.9rem;
     border-radius: 0.375rem;
     white-space: nowrap;
     transition: background-color 0.15s;
@@ -311,8 +445,84 @@ const faqItems = faq?.items?.slice(0, 4) ?? [];
   }
   .header__cta:hover { background-color: var(--color-accent-dark); }
 
-  @media (max-width: 768px) {
+  .header__hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0.25rem;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 0.375rem;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  .header__hamburger span { display: block; height: 2px; background: #fff; border-radius: 2px; }
+
+  /* Mobile drawer */
+  .mobile-menu { display: none; position: fixed; inset: 0; z-index: 200; }
+  .mobile-menu.is-open { display: flex; }
+  .mobile-menu__overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.55); backdrop-filter: blur(2px); }
+  .mobile-menu__panel {
+    position: relative;
+    margin-left: auto;
+    width: min(320px, 85vw);
+    height: 100%;
+    background: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    box-shadow: -4px 0 24px rgba(0,0,0,0.35);
+    animation: spSlideIn 0.22s ease;
+  }
+  @keyframes spSlideIn { from { transform: translateX(100%); } to { transform: translateX(0); } }
+  .mobile-menu__top { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
+  .mobile-menu__logo { font-size: 1.125rem; font-weight: 800; color: #fff; }
+  .mobile-menu__close { width: 2rem; height: 2rem; background: rgba(255,255,255,0.1); border: none; border-radius: 50%; color: #fff; font-size: 1.375rem; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+  .mobile-menu__nav { padding: 1rem 0; flex: 1; }
+  .mobile-menu__nav ul { display: flex; flex-direction: column; }
+  .mobile-menu__link { display: block; padding: 0.875rem 1.25rem; color: rgba(255,255,255,0.85); font-size: 1rem; font-weight: 500; border-bottom: 1px solid rgba(255,255,255,0.07); transition: background-color 0.15s; }
+  .mobile-menu__link:hover { background-color: rgba(255,255,255,0.08); color: #fff; }
+  .mobile-menu__ctas { padding: 1.25rem; display: flex; flex-direction: column; gap: 0.75rem; border-top: 1px solid rgba(255,255,255,0.1); }
+  .mobile-menu__wa { display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.875rem 1rem; background-color: #25D366; color: #fff; font-weight: 700; font-size: 0.9375rem; border-radius: 0.5rem; text-align: center; }
+  .mobile-menu__cta { display: block; padding: 0.875rem 1rem; background-color: var(--color-accent); color: #fff; font-weight: 700; font-size: 0.9375rem; border-radius: 0.5rem; text-align: center; }
+
+  /* Floating WA button */
+  .wa-float {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    left: auto;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    background-color: #25D366;
+    color: #fff;
+    font-family: inherit;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    padding: 0.75rem 1.25rem 0.75rem 1rem;
+    border-radius: 3rem;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.45);
+    transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s;
+    text-decoration: none;
+  }
+  .wa-float:hover { background-color: #1da851; box-shadow: 0 6px 28px rgba(37,211,102,0.55); transform: translateY(-2px); }
+  .wa-float__label { white-space: nowrap; }
+
+  @media (max-width: 900px) {
     .header__nav { display: none; }
+    .header__actions { display: none; }
+    .header__hamburger { display: flex; }
+    .sp-topbar__right { display: none; }
+  }
+  @media (max-width: 480px) {
+    .sp-topbar__left { font-size: 0.75rem; }
+    .wa-float { bottom: 1rem; right: 1rem; padding: 0.75rem; border-radius: 50%; }
+    .wa-float__label { display: none; }
   }
 
   /* ── Page Hero ──────────────────────────────────────────────── */
@@ -517,8 +727,12 @@ const faqItems = faq?.items?.slice(0, 4) ?? [];
     .footer__main { grid-template-columns: 1fr 1fr; }
     .footer__brand { grid-column: 1 / -1; }
   }
-  @media (max-width: 540px) {
+  @media (max-width: 640px) {
     .page-hero { padding: 2.5rem 0 2rem; }
+    .page-hero__header-image { margin: 1rem 0; border-radius: 0; }
+    .page-hero__header-image img { border-radius: 0; }
+  }
+  @media (max-width: 540px) {
     .footer__main { grid-template-columns: 1fr; }
     .footer__brand { grid-column: auto; }
   }
