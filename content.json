@@ -392,131 +392,97 @@
       "slug": "nebosh-ig1-assignment-model-answers",
       "tier": 2,
       "title": "NEBOSH IG1 Assignment Model Answers",
-      "metaTitle": "NEBOSH IG1 Assignment Model Answers | NEBOSH Assignment Help",
-      "metaDescription": "Students needing to see how a distinction-grade IG1 answer is structured for each task type",
+      "metaTitle": "NEBOSH IG1 Model Answers: How a Distinction-Grade Assignment Looks | NEBOSH Assignment Help",
+      "metaDescription": "See how distinction-grade NEBOSH IG1 answers are structured — task by task, with command word compliance, element references, and real workplace application.",
       "h1": "NEBOSH IG1 Model Answers: How a Distinction-Grade Assignment Looks",
-      "intro": "Students needing to see how a distinction-grade IG1 answer is structured for each task type",
-      "h2Sections": [
-        {
-          "heading": "NEBOSH IG1 Task 1 Model Answer Example",
-          "body": ""
-        },
-        {
-          "heading": "NEBOSH IG1 Task 2: Identifying Hazards in a Workplace Scenario",
-          "body": ""
-        },
-        {
-          "heading": "How to Reference NEBOSH IGC Elements in IG1 Answers",
-          "body": ""
-        },
-        {
-          "heading": "IG1 Word Count Per Task: What the Marking Guidance Says",
-          "body": ""
-        },
-        {
-          "heading": "Why Most IG1 Assignments Score Merit Instead of Distinction",
-          "body": ""
-        }
-      ],
+      "intro": "Distinction-grade NEBOSH IG1 answer anatomy — task structure, annotated examples, all 11 IGC elements, hazard identification technique, and the merit-distinction gap.",
+      "h2Sections": [],
       "relatedPages": [
         {
           "title": "NEBOSH IGC Assignment Help",
           "slug": "nebosh-igc-assignment-help"
         },
         {
-          "title": "NEBOSH Open Book Exam Help",
-          "slug": "nebosh-open-book-exam-help"
+          "title": "NEBOSH Assignment Marking Criteria Explained",
+          "slug": "nebosh-assignment-marking-criteria-explained"
+        },
+        {
+          "title": "NEBOSH IG2 Practical Assessment Help",
+          "slug": "nebosh-ig2-practical-assessment-help"
         }
       ],
-      "contextualQuestion": "How does the IG1 marking scheme define sufficient depth for each element of the open book exam?"
+      "contextualQuestion": "How does the IG1 marking scheme define sufficient depth for each open book exam element?",
+      "headerImage": {
+        "src": "/header_nebosh-ig1-assignment-model-answers.webp",
+        "alt": "NEBOSH IG1 Model Answers — Distinction-Grade Assignment Structure",
+        "title": "NEBOSH IG1 Model Answers — Distinction-Grade Assignment Structure",
+        "width": 1200,
+        "height": 420
+      }
     },
     {
       "slug": "nebosh-ig2-practical-assessment-help",
       "tier": 2,
       "title": "NEBOSH IG2 Practical Assessment Help",
-      "metaTitle": "NEBOSH IG2 Practical Assessment Help | NEBOSH Assignment Help",
-      "metaDescription": "Students who need to conduct a workplace inspection for IG2 and need guidance on what to observe, record, and write",
+      "metaTitle": "NEBOSH IG2 Practical Assessment Help: Complete Your Workplace Report | NEBOSH Assignment Help",
+      "metaDescription": "Expert guidance on completing the NEBOSH IG2 practical assessment — workplace inspection, risk assessment format, management report, and submission requirements.",
       "h1": "NEBOSH IG2 Practical Assessment Help: Complete Your Workplace Inspection Report",
-      "intro": "Students who need to conduct a workplace inspection for IG2 and need guidance on what to observe, record, and write",
-      "h2Sections": [
-        {
-          "heading": "What Does the NEBOSH IG2 Practical Assessment Require?",
-          "body": ""
-        },
-        {
-          "heading": "How to Choose a Suitable Workplace for the IG2 Inspection",
-          "body": ""
-        },
-        {
-          "heading": "NEBOSH IG2 Risk Assessment Format: What Examiners Expect",
-          "body": ""
-        },
-        {
-          "heading": "IG2 Management Report: How to Write Recommendations That Score Marks",
-          "body": ""
-        },
-        {
-          "heading": "Common Reasons IG2 Practical Assessments Are Referred",
-          "body": ""
-        },
-        {
-          "heading": "IG2 Submission Deadline and Format Requirements",
-          "body": ""
-        }
-      ],
+      "intro": "Step-by-step guidance for the NEBOSH IG2 — workplace inspection methodology, risk assessment format with all mandatory fields, SMART management report writing.",
+      "h2Sections": [],
       "relatedPages": [
         {
           "title": "NEBOSH IGC Assignment Help",
           "slug": "nebosh-igc-assignment-help"
         },
         {
-          "title": "Risk Assessment Frameworks in NEBOSH Assignments",
-          "slug": "risk-assessment-frameworks-in-nebosh-assignments"
+          "title": "NEBOSH IG1 Model Answers",
+          "slug": "nebosh-ig1-assignment-model-answers"
+        },
+        {
+          "title": "NEBOSH Assignment Referral Recovery",
+          "slug": "nebosh-assignment-referral-recovery"
         }
       ],
-      "contextualQuestion": "How does the NEBOSH IG2 connect workplace hazard identification to health and safety management principles?"
+      "contextualQuestion": "How does the NEBOSH IG2 connect workplace hazard identification to health and safety management principles?",
+      "headerImage": {
+        "src": "/header_nebosh-ig2-practical-assessment-help.webp",
+        "alt": "NEBOSH IG2 Practical Assessment Help — Workplace Inspection and Risk Assessment",
+        "title": "NEBOSH IG2 Practical Assessment Help — Workplace Inspection and Risk Assessment",
+        "width": 1200,
+        "height": 420
+      }
     },
     {
       "slug": "nebosh-assignment-marking-criteria-explained",
       "tier": 2,
       "title": "NEBOSH Assignment Marking Criteria Explained",
-      "metaTitle": "NEBOSH Assignment Marking Criteria Explained | NEBOSH Assignment Help",
-      "metaDescription": "Students who want to understand exactly how their NEBOSH assignments will be graded",
+      "metaTitle": "NEBOSH Assignment Marking Criteria: How Examiners Grade Your Work | NEBOSH Assignment Help",
+      "metaDescription": "Understand NEBOSH's grading bands — Pass, Merit, Distinction, and Refer — with command word expectations and examiner insights. Expert guidance included.",
       "h1": "NEBOSH Assignment Marking Criteria: How Your Work Is Graded and What Examiners Want",
-      "intro": "Students who want to understand exactly how their NEBOSH assignments will be graded",
-      "h2Sections": [
-        {
-          "heading": "NEBOSH Grading Bands: Pass, Merit, Distinction, and Refer Explained",
-          "body": ""
-        },
-        {
-          "heading": "What Do NEBOSH Examiners Look for in a Distinction Answer?",
-          "body": ""
-        },
-        {
-          "heading": "NEBOSH Command Words and Their Marking Implications",
-          "body": ""
-        },
-        {
-          "heading": "How NEBOSH Examiner Reports Reveal Marking Patterns",
-          "body": ""
-        },
-        {
-          "heading": "Why Answers Are Referred: The Most Common Marking Failures",
-          "body": ""
-        }
-      ],
+      "intro": "Understand exactly how NEBOSH grades your assignment — grading bands, command word compliance, and what examiners specifically look for at each level.",
+      "h2Sections": [],
       "relatedPages": [
         {
-          "title": "NEBOSH Open Book Exam Help",
-          "slug": "nebosh-open-book-exam-help"
+          "title": "NEBOSH IG1 Model Answers",
+          "slug": "nebosh-ig1-assignment-model-answers"
         },
         {
-          "title": "NEBOSH IG1 Assignment Model Answers",
-          "slug": "nebosh-ig1-assignment-model-answers"
+          "title": "How to Pass NEBOSH Assignment First Time",
+          "slug": "how-to-pass-nebosh-assignment-first-time"
+        },
+        {
+          "title": "NEBOSH Open Book Exam Help",
+          "slug": "nebosh-open-book-exam-obe-help"
         }
       ],
-      "contextualQuestion": "How does NEBOSH's marking philosophy connect answer depth to the practical application of health and safety principles?"
+      "contextualQuestion": "How does NEBOSH's marking philosophy connect answer depth to practical health and safety application?",
+      "headerImage": {
+        "src": "/header_nebosh-assignment-marking-criteria-explained.webp",
+        "alt": "NEBOSH Assignment Marking Criteria — Grading Bands and Examiner Expectations",
+        "title": "NEBOSH Assignment Marking Criteria — Grading Bands and Examiner Expectations",
+        "width": 1200,
+        "height": 420
+      }
     },
     {
       "slug": "nebosh-fire-certificate-assignment-help",
@@ -640,78 +606,43 @@
       "slug": "how-to-pass-nebosh-assignment-first-time",
       "tier": 2,
       "title": "How to Pass NEBOSH Assignment First Time",
-      "metaTitle": "How to Pass NEBOSH Assignment First Time | NEBOSH Assignment Help",
-      "metaDescription": "Students who want to avoid referral and ensure their first submission meets passing or merit standard",
+      "metaTitle": "How to Pass Your NEBOSH Assignment First Time: Proven Strategies | NEBOSH Assignment Help",
+      "metaDescription": "Avoid NEBOSH referral with proven strategies: command word compliance, examiner report analysis, answer structure, and OBE time management. Expert guidance.",
       "h1": "How to Pass Your NEBOSH Assignment First Time: Proven Strategies From Safety Professionals",
-      "intro": "Students who want to avoid referral and ensure their first submission meets passing or merit standard",
-      "h2Sections": [
-        {
-          "heading": "Why NEBOSH Assignments Are Referred and How to Avoid It",
-          "body": ""
-        },
-        {
-          "heading": "How to Read and Respond to NEBOSH Command Words Correctly",
-          "body": ""
-        },
-        {
-          "heading": "Using NEBOSH Examiner Reports to Predict What Markers Want",
-          "body": ""
-        },
-        {
-          "heading": "Time Management for the NEBOSH Open Book Exam Window",
-          "body": ""
-        },
-        {
-          "heading": "How to Structure a NEBOSH Answer for Maximum Marks",
-          "body": ""
-        },
-        {
-          "heading": "Checklist: Before You Submit Your NEBOSH Assignment",
-          "body": ""
-        }
-      ],
+      "intro": "Proven strategies to pass your NEBOSH OBE on the first attempt — command word compliance, answer structure, examiner report intelligence, and pre-submission checklist.",
+      "h2Sections": [],
       "relatedPages": [
-        {
-          "title": "NEBOSH Open Book Exam Help",
-          "slug": "nebosh-open-book-exam-help"
-        },
         {
           "title": "NEBOSH Assignment Marking Criteria Explained",
           "slug": "nebosh-assignment-marking-criteria-explained"
+        },
+        {
+          "title": "NEBOSH IG1 Model Answers",
+          "slug": "nebosh-ig1-assignment-model-answers"
+        },
+        {
+          "title": "NEBOSH Assignment Word Count Requirements",
+          "slug": "nebosh-assignment-word-count-requirements"
         }
       ],
-      "contextualQuestion": "What study patterns and preparation habits distinguish students who achieve distinction from those who receive a referral?"
+      "contextualQuestion": "What preparation habits distinguish distinction students from those who receive a referral?",
+      "headerImage": {
+        "src": "/header_nebosh-how-to-pass-assignment-first-time.webp",
+        "alt": "How to Pass Your NEBOSH Assignment First Time — Expert Strategy Guide",
+        "title": "How to Pass Your NEBOSH Assignment First Time — Expert Strategy Guide",
+        "width": 1200,
+        "height": 420
+      }
     },
     {
       "slug": "nebosh-assignment-word-count-requirements",
       "tier": 2,
       "title": "NEBOSH Assignment Word Count Requirements",
-      "metaTitle": "NEBOSH Assignment Word Count Requirements | NEBOSH Assignment Help",
-      "metaDescription": "Students unsure about how long each section of their NEBOSH assignment needs to be",
+      "metaTitle": "NEBOSH Assignment Word Count: What Each Unit Requires (IG1, NG1, Diploma) | NEBOSH Assignment Help",
+      "metaDescription": "Word count guidance for NEBOSH IG1, NG1, and Diploma assignments — what NEBOSH expects per task, how length connects to marking, and how to write with depth.",
       "h1": "NEBOSH Assignment Word Count: What Each Unit Requires and How to Manage It",
-      "intro": "Students unsure about how long each section of their NEBOSH assignment needs to be",
-      "h2Sections": [
-        {
-          "heading": "NEBOSH IG1 Word Count Per Task",
-          "body": ""
-        },
-        {
-          "heading": "NEBOSH NG1 Open Book Exam Word Count Guidance",
-          "body": ""
-        },
-        {
-          "heading": "NEBOSH Diploma Assignment Word Count Requirements",
-          "body": ""
-        },
-        {
-          "heading": "Does Going Over the Word Count Affect Your NEBOSH Mark?",
-          "body": ""
-        },
-        {
-          "heading": "How to Write Concisely Without Losing Marks in NEBOSH Assignments",
-          "body": ""
-        }
-      ],
+      "intro": "Unit-specific word count benchmarks for NEBOSH IG1, NG1, and Diploma assignments — with per-mark targets, over/under-writing effects, and concise writing technique.",
+      "h2Sections": [],
       "relatedPages": [
         {
           "title": "NEBOSH Assignment Marking Criteria Explained",
@@ -720,9 +651,52 @@
         {
           "title": "How to Pass NEBOSH Assignment First Time",
           "slug": "how-to-pass-nebosh-assignment-first-time"
+        },
+        {
+          "title": "NEBOSH IG1 Model Answers",
+          "slug": "nebosh-ig1-assignment-model-answers"
         }
       ],
-      "contextualQuestion": "How does NEBOSH's approach to word count connect to the examiner's expectation for answer quality over quantity?"
+      "contextualQuestion": "How does NEBOSH's approach to word count connect to the examiner's expectation for quality over quantity?",
+      "headerImage": {
+        "src": "/header_nebosh-assignment-word-count-requirements.webp",
+        "alt": "NEBOSH Assignment Word Count Requirements — IG1, NG1, and Diploma Guidance",
+        "title": "NEBOSH Assignment Word Count Requirements — IG1, NG1, and Diploma Guidance",
+        "width": 1200,
+        "height": 420
+      }
+    },
+    {
+      "slug": "nebosh-assignment-referral-recovery",
+      "tier": 2,
+      "title": "NEBOSH Assignment Referral Recovery",
+      "metaTitle": "NEBOSH Assignment Referral: What It Means and What to Do Next | NEBOSH Assignment Help",
+      "metaDescription": "Received a NEBOSH referral? Understand exactly what went wrong, what the re-submission process involves, and how to avoid a second referral with expert help.",
+      "h1": "NEBOSH Assignment Referral: What It Means, Why It Happens, and What to Do Next",
+      "intro": "Received a NEBOSH referral? Understand what it means, why it happened, and the exact re-submission process — with strategies to prevent a second referral.",
+      "h2Sections": [],
+      "relatedPages": [
+        {
+          "title": "NEBOSH Assignment Marking Criteria Explained",
+          "slug": "nebosh-assignment-marking-criteria-explained"
+        },
+        {
+          "title": "How to Pass NEBOSH Assignment First Time",
+          "slug": "how-to-pass-nebosh-assignment-first-time"
+        },
+        {
+          "title": "NEBOSH IGC Assignment Help",
+          "slug": "nebosh-igc-assignment-help"
+        }
+      ],
+      "contextualQuestion": "What is the fastest path from a NEBOSH referral to a successful re-submission?",
+      "headerImage": {
+        "src": "/header_nebosh-assignment-referral-recovery.webp",
+        "alt": "NEBOSH Assignment Referral Recovery — Re-submission Guidance and Expert Help",
+        "title": "NEBOSH Assignment Referral Recovery — Re-submission Guidance and Expert Help",
+        "width": 1200,
+        "height": 420
+      }
     }
   ]
 }
