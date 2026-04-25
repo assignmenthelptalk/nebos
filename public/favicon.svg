@@ -1,8 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <!-- Shield background -->
-  <path d="M64 8 L108 26 L108 68 C108 94 88 114 64 122 C40 114 20 94 20 68 L20 26 Z" fill="#1B3A6B"/>
-  <!-- Gold accent bar at top of shield -->
-  <path d="M64 8 L108 26 L108 34 L20 34 L20 26 Z" fill="#C9A84C"/>
-  <!-- NH initials -->
-  <text x="64" y="90" font-family="Georgia, serif" font-size="44" font-weight="700" fill="#C9A84C" text-anchor="middle" letter-spacing="-1">NH</text>
+  <rect width="128" height="128" rx="18" fill="#7C1D1D"/>
+  <text x="64" y="70" font-family="Arial,Arial Black,sans-serif" font-size="26"
+        font-weight="bold" text-anchor="middle" fill="white">NEBOSH</text>
+  <rect x="12" y="106" width="104" height="10" rx="5" fill="#FB923C"/>
 </svg>
