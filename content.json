@@ -133,6 +133,14 @@
         {
           "title": "NEBOSH IG2 Practical Assessment Help",
           "slug": "nebosh-ig2-practical-assessment-help"
+        },
+        {
+          "slug": "what-is-nebosh",
+          "title": "What Is NEBOSH?"
+        },
+        {
+          "slug": "nebosh-igc-vs-ngc",
+          "title": "NEBOSH IGC vs NGC"
         }
       ],
       "contextualQuestion": "What health and safety management principles underpin the NEBOSH IGC qualification structure?",
@@ -194,6 +202,14 @@
         {
           "title": "NEBOSH IGC Assignment Help",
           "slug": "nebosh-igc-assignment-help"
+        },
+        {
+          "slug": "what-is-nebosh",
+          "title": "What Is NEBOSH?"
+        },
+        {
+          "slug": "nebosh-igc-vs-ngc",
+          "title": "NEBOSH IGC vs NGC"
         }
       ],
       "contextualQuestion": "How does UK health and safety law shape the content requirements of the NEBOSH NGC assignment?",
@@ -255,6 +271,14 @@
         {
           "title": "NEBOSH OBE Sample Questions With Worked Answers",
           "slug": "nebosh-obe-sample-questions-worked-answers"
+        },
+        {
+          "slug": "nebosh-exam-dates-registration",
+          "title": "NEBOSH Exam Dates and Registration"
+        },
+        {
+          "slug": "nebosh-pass-rates-statistics",
+          "title": "NEBOSH Pass Rates and Statistics"
         }
       ],
       "contextualQuestion": "How do NEBOSH command words determine the depth and type of answer required in an OBE task?",
@@ -316,6 +340,14 @@
         {
           "title": "NEBOSH Examiner Reports Analysis",
           "slug": "nebosh-examiner-reports-analysis"
+        },
+        {
+          "slug": "what-is-nebosh",
+          "title": "What Is NEBOSH?"
+        },
+        {
+          "slug": "nebosh-certificate-vs-diploma",
+          "title": "NEBOSH Certificate vs Diploma"
         }
       ],
       "contextualQuestion": "What management system frameworks are central to NEBOSH Diploma-level assignment content?",
@@ -377,6 +409,14 @@
         {
           "title": "NEBOSH Diploma Assignment Help",
           "slug": "nebosh-diploma-assignment-help"
+        },
+        {
+          "slug": "what-is-nebosh",
+          "title": "What Is NEBOSH?"
+        },
+        {
+          "slug": "nebosh-pass-rates-statistics",
+          "title": "NEBOSH Pass Rates and Statistics"
         }
       ],
       "contextualQuestion": "What does NEBOSH's academic integrity policy mean for students using assignment help services?",
@@ -473,6 +513,14 @@
         {
           "title": "NEBOSH Open Book Exam Help",
           "slug": "nebosh-open-book-exam-obe-help"
+        },
+        {
+          "slug": "nebosh-pass-rates-statistics",
+          "title": "NEBOSH Pass Rates and Statistics"
+        },
+        {
+          "slug": "what-is-nebosh",
+          "title": "What Is NEBOSH?"
         }
       ],
       "contextualQuestion": "How does NEBOSH's marking philosophy connect answer depth to practical health and safety application?",
@@ -762,6 +810,14 @@
         {
           "title": "NEBOSH Assignment Word Count Requirements",
           "slug": "nebosh-assignment-word-count-requirements"
+        },
+        {
+          "slug": "nebosh-pass-rates-statistics",
+          "title": "NEBOSH Pass Rates and Statistics"
+        },
+        {
+          "slug": "nebosh-exam-dates-registration",
+          "title": "NEBOSH Exam Dates and Registration"
         }
       ],
       "contextualQuestion": "What preparation habits distinguish distinction students from those who receive a referral?",
@@ -889,7 +945,14 @@
           "title": "NEBOSH Diploma Assignment Help"
         }
       ],
-      "contextualQuestion": "Which NEBOSH qualification is right for your current career stage?"
+      "contextualQuestion": "Which NEBOSH qualification is right for your current career stage?",
+      "headerImage": {
+        "src": "/header_what-is-nebosh.webp",
+        "alt": "What Is NEBOSH? Qualifications, Levels, and Global Recognition",
+        "title": "What Is NEBOSH? Qualifications, Levels, and Global Recognition",
+        "width": 1200,
+        "height": 420
+      }
     },
     {
       "slug": "nebosh-igc-vs-ngc",
@@ -939,7 +1002,14 @@
           "title": "NEBOSH Diploma Assignment Help"
         }
       ],
-      "contextualQuestion": "Can you switch from IGC to NGC after completing one?"
+      "contextualQuestion": "Can you switch from IGC to NGC after completing one?",
+      "headerImage": {
+        "src": "/header_nebosh-igc-vs-ngc.webp",
+        "alt": "NEBOSH IGC vs NGC — Which Should You Study?",
+        "title": "NEBOSH IGC vs NGC — Which Should You Study?",
+        "width": 1200,
+        "height": 420
+      }
     },
     {
       "slug": "nebosh-certificate-vs-diploma",
@@ -989,7 +1059,14 @@
           "title": "NEBOSH Marking Criteria Explained"
         }
       ],
-      "contextualQuestion": "What is the most important preparation for a student moving from NEBOSH Certificate to Diploma?"
+      "contextualQuestion": "What is the most important preparation for a student moving from NEBOSH Certificate to Diploma?",
+      "headerImage": {
+        "src": "/header_nebosh-certificate-vs-diploma.webp",
+        "alt": "NEBOSH Certificate vs Diploma — Level Comparison",
+        "title": "NEBOSH Certificate vs Diploma — Level Comparison",
+        "width": 1200,
+        "height": 420
+      }
     },
     {
       "slug": "nebosh-exam-dates-registration",
@@ -1039,7 +1116,14 @@
           "title": "NEBOSH IG2 Practical Assessment Help"
         }
       ],
-      "contextualQuestion": "What should candidates do in the week before their NEBOSH OBE window opens?"
+      "contextualQuestion": "What should candidates do in the week before their NEBOSH OBE window opens?",
+      "headerImage": {
+        "src": "/header_nebosh-exam-dates-registration.webp",
+        "alt": "NEBOSH Exam Dates and Registration — Study Timeline",
+        "title": "NEBOSH Exam Dates and Registration — Study Timeline",
+        "width": 1200,
+        "height": 420
+      }
     },
     {
       "slug": "nebosh-pass-rates-statistics",
@@ -1093,7 +1177,14 @@
           "title": "NEBOSH Examiner Reports Analysis"
         }
       ],
-      "contextualQuestion": "What does NEBOSH examiner report data reveal about the most reliable preparation strategy?"
+      "contextualQuestion": "What does NEBOSH examiner report data reveal about the most reliable preparation strategy?",
+      "headerImage": {
+        "src": "/header_nebosh-pass-rates-statistics.webp",
+        "alt": "NEBOSH Pass Rates and Statistics",
+        "title": "NEBOSH Pass Rates and Statistics",
+        "width": 1200,
+        "height": 420
+      }
     }
   ]
 }
