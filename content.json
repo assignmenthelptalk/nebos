@@ -836,6 +836,264 @@
         "width": 1200,
         "height": 420
       }
+    },
+    {
+      "slug": "what-is-nebosh",
+      "tier": 2,
+      "title": "What Is NEBOSH?",
+      "metaTitle": "What Is NEBOSH? Qualifications, Levels, and Global Recognition | NEBOSH Assignment Help",
+      "metaDescription": "NEBOSH explained: what it is, every qualification it awards (IGC, NGC, Diploma, Fire, Environmental), how each level differs, and who recognises NEBOSH globally.",
+      "h1": "What Is NEBOSH? A Complete Guide to NEBOSH Qualifications, Levels, and Global Recognition",
+      "intro": "People researching NEBOSH qualifications before enrolling or deciding which level to study",
+      "h2Sections": [
+        {
+          "heading": "What NEBOSH Is and What It Does",
+          "body": ""
+        },
+        {
+          "heading": "Every NEBOSH Qualification Explained: Certificates, Diploma, and Award",
+          "body": ""
+        },
+        {
+          "heading": "NEBOSH Qualification Levels: What Each Level Means for Your Career",
+          "body": ""
+        },
+        {
+          "heading": "How NEBOSH Assessments Work: Open Book Exams and Practical Assessments",
+          "body": ""
+        },
+        {
+          "heading": "Where NEBOSH Qualifications Are Recognised Globally",
+          "body": ""
+        },
+        {
+          "heading": "NEBOSH and Professional Membership: The Route to IOSH Chartered Status",
+          "body": ""
+        },
+        {
+          "heading": "NEBOSH Grading: Distinction, Credit, Pass, and Refer",
+          "body": ""
+        }
+      ],
+      "relatedPages": [
+        {
+          "slug": "nebosh-igc-assignment-help",
+          "title": "NEBOSH IGC Assignment Help"
+        },
+        {
+          "slug": "nebosh-ngc-assignment-help",
+          "title": "NEBOSH NGC Assignment Help"
+        },
+        {
+          "slug": "nebosh-diploma-assignment-help",
+          "title": "NEBOSH Diploma Assignment Help"
+        }
+      ],
+      "contextualQuestion": "Which NEBOSH qualification is right for your current career stage?"
+    },
+    {
+      "slug": "nebosh-igc-vs-ngc",
+      "tier": 2,
+      "title": "NEBOSH IGC vs NGC",
+      "metaTitle": "NEBOSH IGC vs NGC: Key Differences, Legislation, and Which to Choose | NEBOSH Assignment Help",
+      "metaDescription": "NEBOSH IGC vs NGC compared: legislative framework, assignment format, UK vs international recognition, employer acceptance, and which certificate suits your location and career.",
+      "h1": "NEBOSH IGC vs NEBOSH NGC: Key Differences, Legislation, and Which to Choose",
+      "intro": "Prospective students deciding between the NEBOSH International General Certificate and the NEBOSH National General Certificate",
+      "h2Sections": [
+        {
+          "heading": "The Core Difference Between NEBOSH IGC and NGC: Legislative Framework",
+          "body": ""
+        },
+        {
+          "heading": "NEBOSH IGC: Unit Structure, Assessment, and What Assignments Require",
+          "body": ""
+        },
+        {
+          "heading": "NEBOSH NGC: Unit Structure, Assessment, and UK Legislative Content",
+          "body": ""
+        },
+        {
+          "heading": "Which Should You Choose: A Decision Framework",
+          "body": ""
+        },
+        {
+          "heading": "Employer Recognition: Where Each Qualification Is Accepted",
+          "body": ""
+        },
+        {
+          "heading": "Progression From IGC or NGC: Identical Routes to Diploma and IOSH Membership",
+          "body": ""
+        }
+      ],
+      "relatedPages": [
+        {
+          "slug": "nebosh-igc-assignment-help",
+          "title": "NEBOSH IGC Assignment Help"
+        },
+        {
+          "slug": "nebosh-ngc-assignment-help",
+          "title": "NEBOSH NGC Assignment Help"
+        },
+        {
+          "slug": "nebosh-diploma-assignment-help",
+          "title": "NEBOSH Diploma Assignment Help"
+        }
+      ],
+      "contextualQuestion": "Can you switch from IGC to NGC after completing one?"
+    },
+    {
+      "slug": "nebosh-certificate-vs-diploma",
+      "tier": 2,
+      "title": "NEBOSH Certificate vs Diploma",
+      "metaTitle": "NEBOSH Certificate vs Diploma: Assignment Complexity, Career Value, and What to Choose | NEBOSH Assignment Help",
+      "metaDescription": "NEBOSH Certificate vs Diploma compared: RQF levels, assignment depth, study time, IOSH membership routes, and who should progress from certificate to diploma.",
+      "h1": "NEBOSH Certificate vs NEBOSH Diploma: Assignment Complexity, Career Value, and What to Choose",
+      "intro": "Health and safety professionals deciding whether to progress from a NEBOSH certificate to the Diploma, or comparing the two levels before choosing",
+      "h2Sections": [
+        {
+          "heading": "Qualification Level: What the RQF Difference Actually Means",
+          "body": ""
+        },
+        {
+          "heading": "How NEBOSH Certificate Assignments Work: OBE and Practical Assessment",
+          "body": ""
+        },
+        {
+          "heading": "How NEBOSH Diploma Assignments Work: Extended Academic Written Work",
+          "body": ""
+        },
+        {
+          "heading": "Career Applicability: Who Should Study Certificate, Who Should Progress to Diploma",
+          "body": ""
+        },
+        {
+          "heading": "IOSH Membership Outcomes: Certificate vs Diploma Pathways",
+          "body": ""
+        },
+        {
+          "heading": "Moving From Certificate to Diploma: What Changes in the Academic Standard",
+          "body": ""
+        }
+      ],
+      "relatedPages": [
+        {
+          "slug": "nebosh-diploma-assignment-help",
+          "title": "NEBOSH Diploma Assignment Help"
+        },
+        {
+          "slug": "nebosh-igc-assignment-help",
+          "title": "NEBOSH IGC Assignment Help"
+        },
+        {
+          "slug": "nebosh-assignment-marking-criteria-explained",
+          "title": "NEBOSH Marking Criteria Explained"
+        }
+      ],
+      "contextualQuestion": "What is the most important preparation for a student moving from NEBOSH Certificate to Diploma?"
+    },
+    {
+      "slug": "nebosh-exam-dates-registration",
+      "tier": 2,
+      "title": "NEBOSH Exam Dates and Registration",
+      "metaTitle": "NEBOSH Exam Dates and Registration: How to Plan Your Study Timeline | NEBOSH Assignment Help",
+      "metaDescription": "When NEBOSH OBE windows run, how to register, registration deadlines, deferral rules, and how much study time to plan for IGC, NGC, and Diploma qualifications.",
+      "h1": "NEBOSH Exam Dates and Registration: How to Plan Your Study Timeline",
+      "intro": "Students planning when to sit their NEBOSH OBE and how much time to allocate to preparation",
+      "h2Sections": [
+        {
+          "heading": "When NEBOSH OBE Windows Run: Assessment Schedule Overview",
+          "body": ""
+        },
+        {
+          "heading": "How to Register for a NEBOSH OBE: The Process Step by Step",
+          "body": ""
+        },
+        {
+          "heading": "How Long to Study for NEBOSH: Study Timelines for Certificate and Diploma",
+          "body": ""
+        },
+        {
+          "heading": "The NEBOSH OBE Window: What Happens in the 48 Hours",
+          "body": ""
+        },
+        {
+          "heading": "Deferring or Resitting a NEBOSH OBE: Rules and Process",
+          "body": ""
+        },
+        {
+          "heading": "Practical Assessment Submission: When to Complete IG2 and NG2",
+          "body": ""
+        }
+      ],
+      "relatedPages": [
+        {
+          "slug": "nebosh-open-book-exam-obe-help",
+          "title": "NEBOSH Open Book Exam Help"
+        },
+        {
+          "slug": "nebosh-igc-assignment-help",
+          "title": "NEBOSH IGC Assignment Help"
+        },
+        {
+          "slug": "nebosh-ig2-practical-assessment-help",
+          "title": "NEBOSH IG2 Practical Assessment Help"
+        }
+      ],
+      "contextualQuestion": "What should candidates do in the week before their NEBOSH OBE window opens?"
+    },
+    {
+      "slug": "nebosh-pass-rates-statistics",
+      "tier": 2,
+      "title": "NEBOSH Pass Rates and Statistics",
+      "metaTitle": "NEBOSH Pass Rates: What the Statistics Say About IGC, NGC, and Diploma | NEBOSH Assignment Help",
+      "metaDescription": "NEBOSH pass rate data explained: IGC and NGC pass percentages, Distinction rates, most common failure causes from NEBOSH examiner reports, and what the statistics mean for your preparation.",
+      "h1": "NEBOSH Pass Rates: What the Statistics Say About IGC, NGC, and Diploma Success",
+      "intro": "Students researching how difficult NEBOSH qualifications are before enrolling, or candidates who are anxious about their upcoming OBE",
+      "h2Sections": [
+        {
+          "heading": "NEBOSH IGC and NGC OBE Pass Rates: What the Data Shows",
+          "body": ""
+        },
+        {
+          "heading": "What NEBOSH Grading Bands Mean in Practice",
+          "body": ""
+        },
+        {
+          "heading": "Why Candidates Fail NEBOSH: Most Common Referral Causes From Examiner Reports",
+          "body": ""
+        },
+        {
+          "heading": "NEBOSH Distinction Rate: Who Achieves It and What Makes the Difference",
+          "body": ""
+        },
+        {
+          "heading": "NEBOSH Diploma Pass Rates: Why They Differ From Certificate Results",
+          "body": ""
+        },
+        {
+          "heading": "Using NEBOSH Pass Rate Data to Focus Your Preparation",
+          "body": ""
+        },
+        {
+          "heading": "NEBOSH Examiner Reports: How to Find and Use Them",
+          "body": ""
+        }
+      ],
+      "relatedPages": [
+        {
+          "slug": "how-to-pass-nebosh-assignment-first-time",
+          "title": "How to Pass NEBOSH First Time"
+        },
+        {
+          "slug": "nebosh-open-book-exam-obe-help",
+          "title": "NEBOSH Open Book Exam Help"
+        },
+        {
+          "slug": "nebosh-examiner-reports-analysis",
+          "title": "NEBOSH Examiner Reports Analysis"
+        }
+      ],
+      "contextualQuestion": "What does NEBOSH examiner report data reveal about the most reliable preparation strategy?"
     }
   ]
 }
